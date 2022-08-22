@@ -5,7 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.js" async></script>
     <title>Angelo John Capuz</title>
   </head>
-  <body></body>
+  <body>
+    <header id="navHome">
+      <nav
+        class="navbar navbar-expand-lg align-items-center navbar-light bg-opacity-75 fixed-top shadow-lg"
+      >
+        <div class="container-fluid fw-bold">
+          <a class="navbar-brand text-primary" href="#"
+            >Magister <span class="text-info">Servus</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="#"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#"
+                  ><i class="bi bi-journal-check"></i> Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#"
+                  ><i class="bi bi-calendar2-event"></i> Events</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-primary"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
