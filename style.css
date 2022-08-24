@@ -5,3 +5,7 @@
     .border-color{
         border: 20px solid black;
     }
+
+    .btn-rounded{
+        border-radius: 10rem;
+    }
