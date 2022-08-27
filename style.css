@@ -1,11 +1,7 @@
-    .font-style-01 {
-        font-family: "Roboto Slab", sans-serif;
-    }
+.font-style-01{
+  font-family: 'Kanit',sans-serif;
 
-    .border-color{
-        border: 20px solid black;
-    }
-
-    .btn-rounded{
-        border-radius: 10rem;
-    }
+}
+.font-color-1{
+  color: #F2AA4CFF;
+}

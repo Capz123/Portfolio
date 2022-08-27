@@ -8,14 +8,20 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
 
+    <link rel="stylesheet" href="style.css">
+
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.js" async></script>
+    <script src="script.js"></script>
 
     <!-- Font 1 -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900"
       rel="stylesheet"
     />
+
+    <!-- Font 2 -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 
     <!-- Google Icons -->
     <link
@@ -31,16 +37,16 @@
 
     <title>Angelo John Capuz</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-dark font-style-01">
     <!-- Navbar start -->
 
     <header id="navHome">
       <nav
-        class="navbar navbar-expand-lg align-items-center navbar-light bg-dark fixed-top shadow-lg"
+        class="navbar navbar-expand-lg align-items-center navbar-light bg-dark fixed-top shadow-lg" id="#navbar"
       >
-        <div class="container-fluid fw-bold">
-          <a class="navbar-brand text-white font-style-01" href="#"
-            >Angelo John <span class="">Capuz</span></a
+        <div class="container-fluid">
+          <a class="navbar-brand text-white font-style-01 fw-bolder " href="#"
+            >Angelo John <span class="font-color-1">Capuz</span></a
           >
           <button
             class="navbar-toggler"
@@ -54,23 +60,23 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto p-2">
               <li class="nav-item">
                 <a
                   class="nav-link active text-white"
                   aria-current="page"
-                  href="#home"
-                  ><i class="bi bi-house"></i> Home</a
+                  href="#scrollspyHome"
+                  ><i class="bi bi-house font-color-1"></i> Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#about"
-                  ><i class="bi bi-journal-check"></i> About</a
+                <a class="nav-link text-white" href="#scrollspyAbout"
+                  ><i class="bi bi-journal-check font-color-1"></i> About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#skills"
-                  ><i class="bi bi-calendar2-event"></i> Skills</a
+                <a class="nav-link text-white" href="#scrollspySkills"
+                  ><i class="bi bi-calendar2-event font-color-1"></i> Skills</a
                 >
               </li>
             </ul>
@@ -81,13 +87,13 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="mt-5 mb-5" id="home">
+    <div class="mt-5 mb-5" id="scrollspyHome">
       <div class="container container-fluid">
         <section class="row d-flex justify-content-center align-content-center">
           <div class="col-md-6 gx-5 mb-4 text-white align-self-center">
-            <h1>Hello, I'm Angelo</h1>
-            <p>Developer</p>
-            <div>
+            <h1 class="font-color-1">Hello</h1><span class="h1">I'm Angelo</span>
+            <h2>Developer</h2>
+            <div class="mt-2">
               <button class="btn btn-success">Download CV</button>
               <button class="btn btn-secondary">Learn more</button>
             </div>
@@ -100,7 +106,7 @@
               alt=""
               srcset=""
               class="img-fluid shadow-lg"
-              style="clip-path: circle()"
+              style="clip-path: circle();"
             />
           </div>
         </section>
@@ -111,7 +117,7 @@
     <hr class="my-5 text-secondary" />
 
     <!-- About Start -->
-    <div class="mt-2 About" id="about">
+    <div class="mt-2 About" id="scrollspyAbout">
       <div class="container text-center text-white">
         <h1>About</h1>
         <p>
@@ -196,7 +202,7 @@
       <h1 class="text-center text-white">What I do</h1>
     </div>
 
-    <div class="WhatIdo m-5" id="skills">
+    <div class="WhatIdo m-5" id="scrollspySkills">
       <div class="container-fluid container">
         <div class="grid">
           <div class="row">
@@ -310,7 +316,7 @@
               style="background-color: #3b5998; width: 40px; border-radius: 50%;"
               href="#!"
               role="button"
-              ><i class="fab fa-facebook-f"></i
+              ><i class="fab fa-facebook-f icon"></i
             ></a>
 
             <!-- Google -->
@@ -319,7 +325,7 @@
               style="background-color: #dd4b39; border-radius: 50%; width: 40px;"
               href="#!"
               role="button"
-              ><i class="fab fa-google"></i
+              ><i class="fab fa-google animationDelay-1 icon"></i
             ></a>
 
 
@@ -329,7 +335,7 @@
               style="background-color: #0082ca; border-radius: 50%; width: 40px;"
               href="#!"
               role="button"
-              ><i class="fab fa-linkedin-in"></i
+              ><i class="fab fa-linkedin-in icon animationDelay-2"></i
             ></a>
             <!-- Github -->
             <a
@@ -337,7 +343,7 @@
               style="background-color: #333333; border-radius: 50%; width: 40px;"
               href="#!"
               role="button"
-              ><i class="fab fa-github"></i
+              ><i class="fab fa-github icon animationDelay-3"></i
             ></a>
         </section>
       </div>
@@ -361,7 +367,7 @@
             <input class="form-control m-2" style="width: 450px;" type="text" placeholder="Name" aria-label="default input example">
             <input class="form-control m-2" style="width: 450px;" type="text" placeholder="Email" aria-label="default input example">
             <textarea name="message" style="width: 450px;" id="SampleFormControl" cols="30" rows="5" placeholder="Message" class="form-control m-2"></textarea>
-            <button type="submit" class="btn btn-primary m-2" style="width: 450px;">Send</button>
+            <button type="submit" class="btn btn-primary m-2" style="width: 450px;">Submit</button>
         </div>
         
       </div>
