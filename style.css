@@ -3,5 +3,29 @@
 
 }
 .font-color-1{
-  color: #F2AA4CFF;
+  color: rgb(209, 146, 64);
+}
+
+.background-image{
+  background-image: url(media/cool-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-image{
+  background-image: url(media/profile4.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  margin-top: .5in;
+  border: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(209, 146, 64);
+}
+
+.back-color{
+  background-color: rgb(209, 146, 64);
 }
